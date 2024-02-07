@@ -1,0 +1,55 @@
+:root{
+
+    --white1: #EBEEF2;
+    --white2: #F0EEED; 
+    --white3: #F2F2F2; 
+    --secondary-dark: #284B59; 
+    --secondary-light: #4A7A8C; 
+    --primary-dark: #A3C9D9; 
+    --primary-light: #5FC2D9;
+    --dark-light: #262626;
+    --dark: #000000;
+    
+    --blue1: #0455BF; 
+    --blue2: #3084F2; 
+    --blue3: #5096F2; 
+    --blue4: #7EB0F2; 
+
+    --gris1: #7E858F;
+    --gris2: #9FA0A6;
+    --gris3: #C0BDBB;
+
+
+}
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+*::before{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+*::after{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+#portada-img{
+
+    height: 92vh;
+    width: 100%;
+    position: relative;
+    z-index: -999;
+    
+}
+.portada-info{
+
+    position: absolute;
+    transform: translateY(-40rem);
+    margin: 32px;
+    margin-left: 25px;
+    color: white;
+    -webkit-text-stroke: 2px var(--dark-light);
+
+}
+
+.portada-info h1{
+
+    font-size: 60px;
+
+}
+.portada-info h2{
+
+    font-size: 50px;
+}
+
+.portada-button{
+
+    position: absolute;
+    transform: translateY(-20rem);
+    margin: 32px;
+    margin-left: 25px;
+
+}
+
+
+button{
+
+    border: none;
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 32px;
+
+}
+#boton h1{
+
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.btn-square{
+
+    background-color: var(--white1);
+    color: var(--dark-light);
+    border: 3px solid var(--dark-light)
+    
+
+}
+
+.btn-square::after, .btn-square::before{
+
+    border: 3px solid var(--white1);
+    content: "";
+    position: absolute;
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform .3s ease;
+
+}
+
+
+.btn-square:hover{
+
+    background-color: var(--gris3);
+}
+.btn-square:hover::after{
+
+    transform: translate(-10px, -16px);
+
+}
+.btn-square:hover::before{
+
+    transform: translate(14px, 12px);
+
+}

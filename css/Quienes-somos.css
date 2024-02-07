@@ -1,0 +1,58 @@
+.contenedor-quienes-somos {
+
+    text-align: center;
+
+}
+#quienes-somos{
+
+    background-color: var(--primary-dark);
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+
+}
+.contenedor-quienes-somos h1{
+
+    color: var(--dark-light);
+
+}
+.contenedor-quienes-somos h4{
+
+    color: var(--secondary-dark);
+
+}
+
+#valores{
+
+
+    display: grid;
+    grid-template-columns: auto 35rem; 
+    margin: 2rem 0;
+
+}
+#valores img{
+
+
+    height: 40rem;
+    width: 50rem;
+    padding-top: 3rem;
+
+}
+#valores div{
+
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: start;
+   margin-right: 6rem;
+   
+
+}
+#valores div h2{
+
+    font-weight: 700;
+}
+

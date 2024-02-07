@@ -1,0 +1,213 @@
+
+#mas-vendidos h1{
+
+
+  text-align: center;
+  font-weight: 600;
+  margin: 1.5rem 0;
+  position: relative;
+  letter-spacing: 1px;
+
+}
+
+#mas-vendidos h1:hover{
+
+  color: var(--secondary-light);
+
+}
+
+#mas-vendidos h1::after{
+
+
+  content: "";
+  height: 2.3px;
+  background-color: black;
+  width: 50%;
+  left: 25%;
+  position: absolute;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all .6s ease-in-out;
+  bottom: 0;
+
+}
+
+#mas-vendidos h1:hover:after{
+
+
+  visibility: visible;
+  transform: scale(1.1);
+  bottom: -4px;
+
+
+}
+
+.contenedor-vendidos{
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.vendidos-item {
+
+  width: 20%;
+  height: 25rem;
+  padding: .5rem;
+  position: relative;
+  border: 2px solid var(--secondary-light);
+}
+.vendidos-item button {
+  
+  z-index: 1;
+}
+
+.vendidos-item img{
+
+  width: 100%;
+  height: 75%;
+  transition: all .3s ease;
+}
+
+.vendidos-item:hover img{
+
+  transform: scale(.9);
+}
+
+.vendidos-txt{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vendidos-txt button{
+
+  
+  border-radius: 5.5rem;
+  box-sizing: border-box;
+  padding: .5rem 1rem;
+  margin-top: .5rem;
+  transition: all .5s ease;
+}
+.vendidos-txt button:hover{
+
+  
+  background-color: var(--primary-light);
+}
+
+.vendidos-txt button a{
+
+  text-decoration: none;
+  color: var(--dark-light);
+  font-weight: 500;
+}
+
+.vendidos-item::before{
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 4px solid transparent;
+}
+
+.vendidos-item:hover:before{
+  animation: border-animation .7s linear forwards
+}
+
+@keyframes border-animation{
+
+  0%{
+
+    width: 0;
+    height: 0;
+    border-top-color: var(--secondary-light);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+  }
+  50%{
+
+    width: 100%;
+    height: 0;
+    border-top-color: var(--secondary-light);
+    border-right-color: var(--secondary-light);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+  }
+  100%{
+
+    width: 100%;
+    height: 100%;
+    border-top-color: var(--secondary-light);
+    border-right-color: var(--secondary-light);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+  }
+
+ }
+.vendidos-item::after{
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 4px solid transparent;
+}
+
+.vendidos-item:hover:after{
+  animation: border-animation2 .7s linear forwards
+}
+
+@keyframes border-animation2{
+
+ 
+  0%{
+
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: var(--secondary-light);
+  
+  }
+  50%{
+  
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--secondary-light);
+    border-left-color: var(--secondary-light);
+  
+  }
+  100%{
+  
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: var(--secondary-light);
+    border-left-color: var(--secondary-light);
+  
+  }
+
+ }
+
+
+
+
+
+
+ 
+
